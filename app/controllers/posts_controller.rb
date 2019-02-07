@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def update
     @post.update(post_params)
     
-    redirect_to edit_path(@post)
+    redirect_to edit_post_path(@post)
   end
 
   private
